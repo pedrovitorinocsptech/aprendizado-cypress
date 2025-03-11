@@ -1,0 +1,21 @@
+# Node.js dependencies
+node_modules/
+package-lock.json
+
+# Cypress generated files
+cypress/videos/
+cypress/screenshots/
+cypress/downloads/
+
+# Logs e cache
+*.log
+*.cache
+cypress.json
+
+# Configurações do editor/IDE
+.vscode/
+.idea/
+.DS_Store/
+
+# Ambiente (se houver variáveis sensíveis)
+.env
