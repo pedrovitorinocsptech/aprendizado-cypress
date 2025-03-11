@@ -1,0 +1,17 @@
+describe('template spec', () => {
+  it('passes', () => {
+    cy.visit('www.saucedemo.com')
+    cy.get('[data-test="username"]').type('standard_user')
+    cy.get('[data-test="password"]').type('secret_sauce')
+    cy.get('[data-test="login-button"]').click()
+    cy.get('[data-test="add-to-cart-sauce-labs-bolt-t-shirt"]').click()
+    cy.get('[data-test="add-to-cart-sauce-labs-fleece-jacket"]').click()
+    cy.get('[data-test="shopping-cart-link"]').click()
+    cy.get('[data-test="checkout"]').click()
+    cy.get('[data-test="firstName"]').type('Pedro')
+    cy.get('[data-test="lastName"]').type('Silva')
+    cy.get('[data-test="postalCode"]').type('7777777')
+    cy.get('[data-test="continue"]').click()
+    cy.get('[data-test="finish"]').click()
+  })
+})
